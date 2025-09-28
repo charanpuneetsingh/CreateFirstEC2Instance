@@ -74,7 +74,14 @@ resource "aws_instance" "web_server" {
 }
 ```
 
-## 3. Verify SSH Access
+## 3. On Cursor IDE Terminal, Use below commands
+```terraform
+terraform init
+terraform plan
+terraform apply
+```
+
+## 4. Verify SSH Access
 
 ```bash
 ssh -i ~/.ssh/my-key ec2-user@_<public-ip of EC2 Instance>_
@@ -83,7 +90,7 @@ ssh -i ~/.ssh/my-key ec2-user@_<public-ip of EC2 Instance>_
 
 
 
-## 4. Verify that Site works
+## 5. Verify that Site works
 http://_public-ip of EC2 Instance_
 
   <img width="760" height="227" alt="image" src="https://github.com/user-attachments/assets/9b19dcbf-cddd-4ecd-ac98-92d38d8b4715" />
