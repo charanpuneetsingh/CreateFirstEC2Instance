@@ -1,7 +1,9 @@
 # CreateFirstEC2Instance
 # Generate Key-Pair file which our instance can use and later can be used to lSSH to our instance.
 
-Run the following command: ''' bash 'ssh-keygen -t rsa -b 2048 -f my-key'
+Run the following command: 
+'''bash
+'ssh-keygen -t rsa -b 2048 -f my-key'
 
  Then use below in the main.tf
 
