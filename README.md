@@ -1,13 +1,14 @@
 # This is my 1st Terraform Project
+## Objective
+Using Terraform (HCL), Launch an EC2 instance on AWS which can be accessed using SSH & HTTP, so that I can test that the EC2 launch is successfull and the HTTP Web is accessible.
 
-
-## Generate Key-Pair file which our EC2 instance can use and later can be used to SSH to our instance.
+## 1. Generate Key-Pair file which our EC2 instance can use and later can be used to SSH to our instance.
 
 ```bash
 ssh-keygen -t rsa -b 2048 -f my-key
 chmod 400 ./my-key
 ```
-## CreateFirstEC2Instance
+## 2. CreateFirstEC2Instance
  Then use below in the main.tf
 
  ```terraform
@@ -73,17 +74,17 @@ resource "aws_instance" "web_server" {
 }
 ```
 
-## Verify SSH Access
+## 3. Verify SSH Access
 
 ```bash
 ssh -i ~/.ssh/my-key ec2-user@<_public-ip of EC2 Instance_>
 ```
-<img width="1489" height="373" alt="image" src="https://github.com/user-attachments/assets/3b15dacf-0040-4f73-84f4-2756b11224f2" />
+  <img width="1489" height="373" alt="image" src="https://github.com/user-attachments/assets/3b15dacf-0040-4f73-84f4-2756b11224f2" />
 
 
 
-## Verify that Site works
+## 4. Verify that Site works
 http://_public-ip of EC2 Instance_
 
-<img width="760" height="227" alt="image" src="https://github.com/user-attachments/assets/9b19dcbf-cddd-4ecd-ac98-92d38d8b4715" />
+  <img width="760" height="227" alt="image" src="https://github.com/user-attachments/assets/9b19dcbf-cddd-4ecd-ac98-92d38d8b4715" />
 
