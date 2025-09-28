@@ -77,7 +77,7 @@ resource "aws_instance" "web_server" {
 ## 3. Verify SSH Access
 
 ```bash
-ssh -i ~/.ssh/my-key ec2-user@<_public-ip of EC2 Instance_>
+ssh -i ~/.ssh/my-key ec2-user@_<public-ip of EC2 Instance>_
 ```
   <img width="1489" height="373" alt="image" src="https://github.com/user-attachments/assets/3b15dacf-0040-4f73-84f4-2756b11224f2" />
 
