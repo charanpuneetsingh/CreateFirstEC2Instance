@@ -1,5 +1,9 @@
 # CreateFirstEC2Instance
- In the main.tf, paste below
+# Generate Key-Pair file which our instance can use and later can be used to lSSH to our instance.
+
+'ssh-keygen -t rsa -b 2048 -f my-key'
+
+ Then use below in the main.tf
 
  ```terraform
  provider "aws" {
