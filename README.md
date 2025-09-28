@@ -75,6 +75,12 @@ resource "aws_instance" "web_server" {
 ```bash
 ssh -i ~/.ssh/my-key ec2-user@<_public-ip of EC2 Instance_>
 ```
+<img width="1489" height="373" alt="image" src="https://github.com/user-attachments/assets/3b15dacf-0040-4f73-84f4-2756b11224f2" />
+
+
 
 ## Verify that Site works
 http://_public-ip of EC2 Instance_
+
+<img width="760" height="227" alt="image" src="https://github.com/user-attachments/assets/9b19dcbf-cddd-4ecd-ac98-92d38d8b4715" />
+
