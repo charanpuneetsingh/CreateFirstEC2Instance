@@ -69,3 +69,12 @@ resource "aws_instance" "web_server" {
   }
 }
 ```
+
+## Verify SSH Access
+
+```bash
+ssh -i ~/.ssh/my-key ec2-user@_public-ip of EC2 Instance_
+```
+
+## Verify that Site works
+http://_public-ip of EC2 Instance_
