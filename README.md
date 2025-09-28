@@ -1,7 +1,8 @@
 # CreateFirstEC2Instance
  In the main.tf, paste below
 
- '''provider "aws" {
+ ```terraform
+ provider "aws" {
   region = "us-east-2"
 }
 
