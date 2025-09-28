@@ -1,9 +1,9 @@
-# CreateFirstEC2Instance
 # Generate Key-Pair file which our instance can use and later can be used to lSSH to our instance.
 
-'''bash
+```bash
 ssh-keygen -t rsa -b 2048 -f my-key
 
+# CreateFirstEC2Instance
  Then use below in the main.tf
 
  ```terraform
